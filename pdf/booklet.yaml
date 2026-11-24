@@ -15,6 +15,7 @@ pdf-engine-opts:
 top-level-division: chapter
 number-sections: true
 variables:
+  header-includes: '\renewcommand{\tightlist}{\setlength{\itemsep}{3pt}\setlength{\parskip}{0pt}}'
   documentclass: ltjsbook
   classoption:
     - openany
