@@ -21,3 +21,4 @@ variables:
   geometry:
     - a5paper
     - margin=18mm
+    - footskip=8mm
