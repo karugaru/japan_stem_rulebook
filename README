@@ -1,0 +1,36 @@
+# 日本のSTEM教育のための小冊子
+
+このプロジェクトは、日本でのSTEM教育における基礎、定理、公式、法則、原理、現象などを短くまとめ、
+いつでも閲覧できる冊子を作成することを目的としています。
+
+数学、物理、化学、生物、地学、天文学などの自然科学全般を対象とします。
+各項目を簡潔に整理し、学習時に知識を振り返るための資料を目指します。
+
+日本の小学校から高等学校までの学習指導要領内で扱われている内容の結論やまとめ部分のみを取り上げます。
+過程や導出などの詳細は原則として扱いません。
+また、学習指導要領に含まれないが過去の教育課程で扱われていた内容や、一般的に重要とされる知識も必要に応じて取り上げます。
+
+## 現在の状態
+
+現在の原稿は、日本語と数式を含むPDFの組版を確認するためのサンプルです。冊子の内容はこれから整備します。
+
+## PDFの作成
+
+WindowsでPandocとMiKTeXを用意し、リポジトリのルートで次のコマンドを実行します。
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-pdf.ps1
+```
+
+`output/booklet.pdf`にA5サイズのPDFが生成されます。環境の準備、原稿の編集、冊子としての印刷方法は[PDF作成手順書](docs/pdf-creation.md)を参照してください。
+
+## ファイル構成
+
+- [pdf/manuscript.md](pdf/manuscript.md)：冊子の原稿
+- [pdf/booklet.yaml](pdf/booklet.yaml)：用紙サイズや目次などの設定
+- [scripts/build-pdf.ps1](scripts/build-pdf.ps1)：PDF生成スクリプト
+- [docs/pdf-creation.md](docs/pdf-creation.md)：PDF作成手順書
+
+## ライセンス
+
+CC0で公開しています。[LICENSE](LICENSE)を参照してください。
