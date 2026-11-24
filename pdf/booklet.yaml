@@ -1,0 +1,16 @@
+input-files:
+  - pdf/manuscript.md
+pdf-engine: lualatex
+pdf-engine-opts:
+  - --enable-installer
+table-of-contents: true
+toc-depth: 2
+top-level-division: chapter
+number-sections: true
+variables:
+  documentclass: ltjsbook
+  classoption:
+    - openany
+  geometry:
+    - a5paper
+    - margin=18mm
