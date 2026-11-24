@@ -1,3 +1,16 @@
+<!-- markdownlint-disable MD041 -->
+```{=latex}
+\begin{titlepage}
+\centering
+\vspace*{\fill}
+
+{\Large\bfseries 自然科学の最小参考書\par}
+\vspace{1em}
+{\small 高校までの数学・物理・化学・生物・医学・地学・天文学・情報\par}
+\vspace*{\fill}
+\end{titlepage}
+```
+
 # はじめに {-}
 
 もし、めちゃくちゃ賢い小学生が、「自然科学をこの一冊でマスターしたい！」と言い出したら、それに答えることができるような冊子を作成するプロジェクトです。

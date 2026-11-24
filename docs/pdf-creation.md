@@ -30,7 +30,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-pdf.ps1
 
 ## 原稿と設定
 
-[pdf/00-front-matter.md](../pdf/00-front-matter.md)に概要と目次、各章のファイルに本文、[pdf/09-back-matter.md](../pdf/09-back-matter.md)に索引、あとがき、奥付をUTF-8で記述します。各章では`#`が章、`##`が節になり、章番号が自動で作成されます。文中の数式は`$S = \pi r^2$`、独立した数式は`$$`で囲みます。
+[pdf/00-front-matter.md](../pdf/00-front-matter.md)に表紙、概要と目次、各章のファイルに本文、[pdf/09-back-matter.md](../pdf/09-back-matter.md)に索引、あとがき、奥付をUTF-8で記述します。表紙のレイアウトは同ファイル先頭のLaTeXブロックで指定しています。各章では`#`が章、`##`が節になり、章番号が自動で作成されます。文中の数式は`$S = \pi r^2$`、独立した数式は`$$`で囲みます。
 
 原稿は小学6年生以上を対象に、初学者が読み進められ、既習者も復習に使えるように書きます。用語や記号・記法は初めて使うときに説明し、定義や性質、公式や法則を成立する条件や具体例とともに示します。
 
