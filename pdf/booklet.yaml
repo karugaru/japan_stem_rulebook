@@ -1,10 +1,17 @@
 input-files:
-  - pdf/manuscript.md
+  - pdf/00-front-matter.md
+  - pdf/01-mathematics.md
+  - pdf/02-physics.md
+  - pdf/03-chemistry.md
+  - pdf/04-biology.md
+  - pdf/05-medicine.md
+  - pdf/06-earth-science.md
+  - pdf/07-astronomy.md
+  - pdf/08-information.md
+  - pdf/09-back-matter.md
 pdf-engine: lualatex
 pdf-engine-opts:
   - --enable-installer
-table-of-contents: true
-toc-depth: 2
 top-level-division: chapter
 number-sections: true
 variables:

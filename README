@@ -3,7 +3,7 @@
 このプロジェクトは、日本でのSTEM教育における基礎、定理、公式、法則、原理、現象などを短くまとめ、
 いつでも閲覧できる冊子を作成することを目的としています。
 
-数学、物理、化学、生物、地学、天文学などの自然科学全般を対象とします。
+数学、物理、化学、生物、医学、地学、天文学、情報などを対象とします。
 各項目を簡潔に整理し、学習時に知識を振り返るための資料を目指します。
 
 日本の小学校から高等学校までの学習指導要領内で扱われている内容の結論やまとめ部分のみを取り上げます。
@@ -12,7 +12,7 @@
 
 ## 現在の状態
 
-現在の原稿は、日本語と数式を含むPDFの組版を確認するためのサンプルです。冊子の内容はこれから整備します。
+現在は目次のみを作成しています。表紙、各章、索引、あとがき、奥付の内容はこれから整備します。
 
 ## PDFの作成
 
@@ -26,8 +26,17 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-pdf.ps1
 
 ## ファイル構成
 
-- [pdf/manuscript.md](pdf/manuscript.md)：冊子の原稿
-- [pdf/booklet.yaml](pdf/booklet.yaml)：用紙サイズや目次などの設定
+- [pdf/00-front-matter.md](pdf/00-front-matter.md)：表紙と目次
+- [pdf/01-mathematics.md](pdf/01-mathematics.md)：第1章 数学
+- [pdf/02-physics.md](pdf/02-physics.md)：第2章 物理
+- [pdf/03-chemistry.md](pdf/03-chemistry.md)：第3章 化学
+- [pdf/04-biology.md](pdf/04-biology.md)：第4章 生物
+- [pdf/05-medicine.md](pdf/05-medicine.md)：第5章 医学
+- [pdf/06-earth-science.md](pdf/06-earth-science.md)：第6章 地学
+- [pdf/07-astronomy.md](pdf/07-astronomy.md)：第7章 天文学
+- [pdf/08-information.md](pdf/08-information.md)：第8章 情報
+- [pdf/09-back-matter.md](pdf/09-back-matter.md)：索引、あとがき、奥付
+- [pdf/booklet.yaml](pdf/booklet.yaml)：原稿の入力順や用紙サイズなどの設定
 - [scripts/build-pdf.ps1](scripts/build-pdf.ps1)：PDF生成スクリプト
 - [docs/pdf-creation.md](docs/pdf-creation.md)：PDF作成手順書
 

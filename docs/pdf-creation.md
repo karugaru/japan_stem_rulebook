@@ -26,13 +26,15 @@ winget install --id MiKTeX.MiKTeX --exact --source winget --scope user
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\build-pdf.ps1
 ```
 
-スクリプトが`output`フォルダを作成し、サンプル原稿の`pdf/manuscript.md`から`output/booklet.pdf`を生成します。出力フォルダはGitには追加されません。`-ExecutionPolicy Bypass`は、この実行時のみPowerShellのスクリプト実行ポリシーを緩和します。
+スクリプトが`output`フォルダを作成し、分割された原稿を指定順に結合して`output/booklet.pdf`を生成します。出力フォルダはGitには追加されません。`-ExecutionPolicy Bypass`は、この実行時のみPowerShellのスクリプト実行ポリシーを緩和します。
 
 ## 原稿と設定
 
-[pdf/manuscript.md](../pdf/manuscript.md)をUTF-8で編集します。`#`が章、`##`が節になり、目次と章番号が自動で作成されます。文中の数式は`$S = \pi r^2$`、独立した数式は`$$`で囲みます。
+[pdf/00-front-matter.md](../pdf/00-front-matter.md)に表紙と目次、各章のファイルに本文、[pdf/07-back-matter.md](../pdf/07-back-matter.md)に索引、あとがき、奥付をUTF-8で記述します。各章では`#`が章、`##`が節になり、章番号が自動で作成されます。文中の数式は`$S = \pi r^2$`、独立した数式は`$$`で囲みます。
 
-用紙サイズ、余白、目次などは[pdf/booklet.yaml](../pdf/booklet.yaml)で変更できます。
+目次は手書きで、現在はページ番号を付けていません。章や節を変更したときは目次も更新してください。
+
+原稿の入力順、用紙サイズ、余白などは[pdf/booklet.yaml](../pdf/booklet.yaml)で変更できます。
 出力先は[scripts/build-pdf.ps1](../scripts/build-pdf.ps1)で設定しています。
 
 ## 小冊子として印刷する
